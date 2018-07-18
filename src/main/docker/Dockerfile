@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get install -y apt-utils git
 
 # clone Bayou
-RUN git clone https://github.com/capergroup/bayou.git ~/bayou
+# RUN git clone https://github.com/capergroup/bayou.git ~/bayou
 
 # install build dependencies
 RUN (cd ~/bayou/tool_files/build_scripts; ./install_dependencies.sh)
