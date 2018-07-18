@@ -82,7 +82,7 @@ public class Driver {
             // multiple class paths can be separated by semi-colon
             String classpaths = System.getenv("CLASSPATH");
             String[] paths = new String[] {""};
-            if(classpaths == null) {
+            if(classpaths != null) {
                 paths = classpaths.split(";");
             }
             new Driver(args).execute(paths);
