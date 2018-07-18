@@ -36,22 +36,29 @@ public class Driver {
         this.options = new Options(args);
     }
 
-    private CompilationUnit createCompilationUnit(String classpath) throws IOException {
+    private CompilationUnit createCompilationUnit(String[] class_paths) throws IOException {
         ASTParser parser = ASTParser.newParser(AST.JLS8);
         File input = new File(options.cmdLine.getOptionValue("input-file"));
 
+        /*
+        String[] class_paths = new String[] {
+            "/Users/yanxin/Documents/work/rice/bayou/benchmark/jars/jsoup-1.11.2.jar",
+            "/Users/yanxin/Documents/work/rice/bayou/benchmark/jars/htmlcleaner-2.21.jar"
+        };
+        */
         parser.setSource(FileUtils.readFileToString(input, "utf-8").toCharArray());
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
         parser.setUnitName("Program.java");
-        parser.setEnvironment(new String[] { classpath != null? classpath : "" },
-                new String[] { "" }, new String[] { "UTF-8" }, true);
+        // parser.setEnvironment(new String[] { classpath != null? classpath : "" }, new String[] { "" }, new String[] { "UTF-8" }, true);
+        parser.setEnvironment(class_paths, new String[] {""}, new String[] { "UTF-8" }, true);
         parser.setResolveBindings(true);
+        parser.setBindingsRecovery(true);
 
         return (CompilationUnit) parser.createAST(null);
     }
 
-    public void execute(String classpath) throws IOException {
-        CompilationUnit cu = createCompilationUnit(classpath);
+    public void execute(String[] classpaths) throws IOException {
+        CompilationUnit cu = createCompilationUnit(classpaths);
         Visitor visitor = new Visitor(cu, options);
         cu.accept(visitor);
         String json = visitor.buildJson();
@@ -72,8 +79,10 @@ public class Driver {
 
 	public static void main(String args[]) {
         try {
-            String classpath = System.getenv("CLASSPATH");
-            new Driver(args).execute(classpath);
+            // multiple class paths can be separated by semi-colon
+            String classpaths = System.getenv("CLASSPATH");
+            String[] paths = classpaths.split(";");
+            new Driver(args).execute(paths);
         } catch (ParseException | IOException e) {
             System.out.println("Unexpected exception: " + e.getMessage());
         }

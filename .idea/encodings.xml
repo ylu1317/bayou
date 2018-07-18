@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/tool_files/floodgage/trials/read_lines_of_file_1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/ast_quality_perf_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/batch_dom_driver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/bayou" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/dom_driver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/floodgage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/low_level_sketches" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/predict_asts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool_files/maven_3_3_9/predict_asts_data_sanity_checker" charset="UTF-8" />
+  </component>
+</project>

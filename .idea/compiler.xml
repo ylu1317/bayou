@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ast_quality_perf_test" />
+        <module name="batch_dom_driver" />
+        <module name="bayou" />
+        <module name="dom_driver" />
+        <module name="floodgage" />
+        <module name="low_level_sketches" />
+        <module name="predict_asts (1)" />
+        <module name="predict_asts (2)" />
+        <module name="trialpack" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

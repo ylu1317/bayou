@@ -78,7 +78,7 @@ public class DriverTest {
         String[] args = {"-f", inputFile.getAbsolutePath(),
                          "-c", configFile.getAbsolutePath(),
                          "-o", tmpFile.getAbsolutePath()};
-        new Driver(args).execute(classpath);
+        new Driver(args).execute(new String[]{classpath});
 
         // match the output and expected JSON
         String out = new String(Files.readAllBytes(Paths.get(tmpFile.getAbsolutePath())));
