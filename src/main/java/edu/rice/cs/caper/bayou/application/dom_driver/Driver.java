@@ -84,6 +84,7 @@ public class Driver {
             String[] paths = classpaths.split(";");
             new Driver(args).execute(paths);
         } catch (ParseException | IOException e) {
+            System.out.println("This is a new version.");
             System.out.println("Unexpected exception: " + e.getMessage());
         }
 	}
