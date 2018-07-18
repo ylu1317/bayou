@@ -80,10 +80,22 @@ public class Driver {
 	public static void main(String args[]) {
         try {
             // multiple class paths can be separated by semi-colon
-            String classpaths = System.getenv("CLASSPATH");
+            // String classpaths = System.getenv("CLASSPATH");
+            File jar_dir = new File("jars");
+            File[] jar_files = jar_dir.listFiles();
+            assert jar_files != null;
             String[] paths = new String[] {""};
-            if(classpaths != null) {
-                paths = classpaths.split(";");
+            if(jar_files.length > 0) {
+                String[] jars = new String[jar_files.length];
+                for(int i = 0; i < jars.length; ++i) {
+                    jars[i] = jar_files[i].getAbsolutePath();
+                }
+                paths = jars;
+            }
+
+            System.out.println("Jar paths:");
+            for(String s : paths) {
+                System.out.println("  " + s);
             }
             new Driver(args).execute(paths);
         } catch (ParseException | IOException e) {

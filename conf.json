@@ -1,0 +1,12 @@
+{
+  "api-classes": [
+  ],
+  "api-packages": [
+  ],
+  "api-modules": [
+    "org"
+  ],
+  "num-unrolls": 1,
+  "max-seqs": 10,
+  "javadoc-type": "summary"
+}
