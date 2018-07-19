@@ -1,0 +1,155 @@
+{
+  "programs": [
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/jsoup-1.11.2/org/jsoup/helper/W3CDom.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DBranch",
+            "_cond": [],
+            "_then": [
+              {
+                "node": "DAPICall",
+                "_call": "org.w3c.dom.Document.createElementNS(java.lang.String,java.lang.String)",
+                "_throws": [
+                  "org.w3c.dom.DOMException"
+                ],
+                "_returns": "org.w3c.dom.Element"
+              },
+              {
+                "node": "DBranch",
+                "_cond": [],
+                "_then": [
+                  {
+                    "node": "DAPICall",
+                    "_call": "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)",
+                    "_throws": [
+                      "org.w3c.dom.DOMException"
+                    ],
+                    "_returns": "org.w3c.dom.Node"
+                  }
+                ],
+                "_else": [
+                  {
+                    "node": "DAPICall",
+                    "_call": "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)",
+                    "_throws": [
+                      "org.w3c.dom.DOMException"
+                    ],
+                    "_returns": "org.w3c.dom.Node"
+                  }
+                ]
+              }
+            ],
+            "_else": [
+              {
+                "node": "DBranch",
+                "_cond": [],
+                "_then": [
+                  {
+                    "node": "DAPICall",
+                    "_call": "org.w3c.dom.Document.createTextNode(java.lang.String)",
+                    "_throws": [],
+                    "_returns": "org.w3c.dom.Text"
+                  },
+                  {
+                    "node": "DAPICall",
+                    "_call": "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)",
+                    "_throws": [
+                      "org.w3c.dom.DOMException"
+                    ],
+                    "_returns": "org.w3c.dom.Node"
+                  }
+                ],
+                "_else": [
+                  {
+                    "node": "DBranch",
+                    "_cond": [],
+                    "_then": [
+                      {
+                        "node": "DAPICall",
+                        "_call": "org.w3c.dom.Document.createComment(java.lang.String)",
+                        "_throws": [],
+                        "_returns": "org.w3c.dom.Comment"
+                      },
+                      {
+                        "node": "DAPICall",
+                        "_call": "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)",
+                        "_throws": [
+                          "org.w3c.dom.DOMException"
+                        ],
+                        "_returns": "org.w3c.dom.Node"
+                      }
+                    ],
+                    "_else": [
+                      {
+                        "node": "DAPICall",
+                        "_call": "org.w3c.dom.Document.createTextNode(java.lang.String)",
+                        "_throws": [],
+                        "_returns": "org.w3c.dom.Text"
+                      },
+                      {
+                        "node": "DAPICall",
+                        "_call": "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)",
+                        "_throws": [
+                          "org.w3c.dom.DOMException"
+                        ],
+                        "_returns": "org.w3c.dom.Node"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.w3c.dom.Document.createElementNS(java.lang.String,java.lang.String)",
+            "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)"
+          ]
+        },
+        {
+          "calls": [
+            "org.w3c.dom.Document.createComment(java.lang.String)",
+            "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)"
+          ]
+        },
+        {
+          "calls": [
+            "org.w3c.dom.Document.createTextNode(java.lang.String)",
+            "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "head@82"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/jsoup-1.11.2/org/jsoup/helper/W3CDom.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.w3c.dom.Document.setDocumentURI(java.lang.String)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.w3c.dom.Document.setDocumentURI(java.lang.String)"
+          ]
+        }
+      ],
+      "javadoc": "converts a jsoup document into the provided w 3 c document",
+      "method": "convert@51"
+    }
+  ]
+}

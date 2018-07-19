@@ -1,0 +1,621 @@
+{
+  "programs": [
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "startElement@210"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": "generates code for tag provider class from specified configuration xml file",
+      "method": "main@105"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "startElement@210"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": "generates code for tag provider class from specified configuration xml file",
+      "method": "main@105"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "startElement@210"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": "generates code for tag provider class from specified configuration xml file",
+      "method": "main@105"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "parse@157"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "characters@162"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "startElement@210"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "endElement@241"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "getTagInfo@101"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": "generates code for tag provider class from specified configuration xml file",
+      "method": "main@105"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "parse@157"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "characters@162"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "_throws": [],
+            "_returns": "java.lang.String"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)",
+            "org.xml.sax.Attributes.getValue(java.lang.String)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "startElement@210"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "endElement@241"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "getTagInfo@101"
+    },
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/htmlcleaner-2.21/org/htmlcleaner/ConfigFileTagProvider.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          },
+          {
+            "node": "DAPICall",
+            "_call": "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)",
+            "org.xml.sax.InputSource.InputSource(java.io.Reader)"
+          ]
+        }
+      ],
+      "javadoc": "generates code for tag provider class from specified configuration xml file",
+      "method": "main@105"
+    }
+  ]
+}

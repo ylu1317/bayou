@@ -1,0 +1,27 @@
+{
+  "programs": [
+    {
+      "file": "/root/tool_files/maven_3_3_9/batch_dom_driver/html/jsoup-1.11.2/org/jsoup/nodes/Attributes.java",
+      "ast": {
+        "node": "DSubTree",
+        "_nodes": [
+          {
+            "node": "DAPICall",
+            "_call": "org.jsoup.nodes.Attributes.Dataset.EntrySet.EntrySet()",
+            "_throws": [],
+            "_returns": "void"
+          }
+        ]
+      },
+      "sequences": [
+        {
+          "calls": [
+            "org.jsoup.nodes.Attributes.Dataset.EntrySet.EntrySet()"
+          ]
+        }
+      ],
+      "javadoc": null,
+      "method": "entrySet@393"
+    }
+  ]
+}
