@@ -23,6 +23,7 @@ import sys
 import json
 import textwrap
 
+sys.path.append("src/main/python");
 from bayou.models.low_level_evidences.data_reader import Reader
 from bayou.models.low_level_evidences.model import Model
 from bayou.models.low_level_evidences.utils import read_config, dump_config
