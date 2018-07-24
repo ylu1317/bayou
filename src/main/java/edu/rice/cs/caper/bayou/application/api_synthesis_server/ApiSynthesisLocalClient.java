@@ -16,6 +16,7 @@ limitations under the License.
 package edu.rice.cs.caper.bayou.application.api_synthesis_server;
 
 
+import com.google.gson.Gson;
 import edu.rice.cs.caper.bayou.core.bayou_services_client.api_synthesis.ApiSynthesisClient;
 import edu.rice.cs.caper.bayou.core.bayou_services_client.api_synthesis.ParseError;
 import edu.rice.cs.caper.bayou.core.bayou_services_client.api_synthesis.SynthesisError;
@@ -24,6 +25,7 @@ import org.apache.commons.cli.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 
 class ApiSynthesisLocalClient
@@ -57,12 +59,17 @@ class ApiSynthesisLocalClient
             results = client.synthesise(code, maxProgramCount);
         }
 
+        /*
         for(String result : results)
         {
 	        System.out.println("\n---------- BEGIN PROGRAM  ----------");
             System.out.print(result);
         }
         System.out.print("\n"); // don't have next console prompt start on final line of code output.
+        */
+        Gson gson = new Gson();
+        String json_str = gson.toJson(results);
+        System.out.println(json_str);
     }
 
     private static final String NUM_PROGRAMS = "num_programs";
