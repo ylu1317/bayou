@@ -21,6 +21,7 @@ import random
 import numpy as np
 from itertools import chain
 
+sys.path.append("src/main/python");
 import bayou.models.low_level_evidences.evidence
 from bayou.models.low_level_evidences.utils import gather_calls
 

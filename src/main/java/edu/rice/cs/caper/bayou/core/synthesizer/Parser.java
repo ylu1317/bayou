@@ -60,6 +60,20 @@ public class Parser {
                 throw new ParseException("Malformed URL in classpath.");
             }
         }
+
+        // add additional class path from the jar directory
+        File jar_dir = new File("/root/jars");
+        File[] jar_files = jar_dir.listFiles();
+        assert jar_files != null;
+        for(File jar : jar_files) {
+            System.out.println("Adding jar file to urlList: " + jar.getAbsolutePath());
+            try {
+                urlList.add(jar.toURI().toURL());
+            } catch (MalformedURLException e) {
+                throw new ParseException("Malformed URL in classpath.");
+            }
+        }
+
         this.classpathURLs = urlList.toArray(new URL[0]);
     }
 
@@ -71,8 +85,36 @@ public class Parser {
         parser.setCompilerOptions(options);
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
         parser.setUnitName("Program.java");
-        parser.setEnvironment(new String[] { classpath != null? classpath : "" },
-                new String[] { "" }, new String[] { "UTF-8" }, true);
+
+        File jar_dir = new File("/root/jars");
+        File[] jar_files = jar_dir.listFiles();
+        assert jar_files != null;
+
+        int length = jar_files.length;
+        String[] paths = new String[] {""};
+        if(classpath != null) {
+            length += 1;
+            paths = new String[] {classpath};
+        }
+
+        if(jar_files.length > 0) {
+            String[] jars = new String[length];
+            for(int i = 0; i < jar_files.length; ++i) {
+                jars[i] = jar_files[i].getAbsolutePath();
+            }
+            if(classpath != null) {
+                jars[length - 1] = classpath;
+            }
+            paths = jars;
+        }
+
+        System.out.println("Jar paths:");
+        for(String s : paths) {
+            System.out.println("  " + s);
+        }
+
+        // parser.setEnvironment(new String[] { classpath != null? classpath : "" }, new String[] { "" }, new String[] { "UTF-8" }, true);
+        parser.setEnvironment(paths, new String[] { "" }, new String[] { "UTF-8" }, true);
         parser.setResolveBindings(true);
         cu = (CompilationUnit) parser.createAST(null);
 

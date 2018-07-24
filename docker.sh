@@ -8,6 +8,7 @@
 # docker run --name bayou-yl64 --rm -v $(pwd):/root -p 8080:8080 -p 8081:8081 -p 8084:8084 -it bayou /bin/bash
 # docker run --name bayou-yl64 --entrypoint "/bin/bash" -p 8080:8080 -p 8081:8081 -p 8084:8084 -it bayou
 ## docker run -v $(pwd):/root -p 8080:8080 -p 8081:8081 -p 8084:8084 -it ubuntu /bin/bash
-docker run --name bayou-yl64 --rm -v $(pwd):/root -p 8080:8080 -p 8081:8081 -p 8084:8084 -it crac1017/bayou /bin/bash
+# docker run --name bayou-yl64 --rm -v $(pwd):/root -p 8080:8080 -p 8081:8081 -p 8084:8084 -it crac1017/bayou /bin/bash
+docker run --name bayou-yl64 -v $(pwd):/root -p 8080:8080 -p 8081:8081 -p 8084:8084 -it crac1017/bayou /bin/bash
 # nvidia-docker run --rm -it -p 8888:8888 crac1017/tensorflow:gpu
 # docker run --rm -v $(pwd):/root -p 8888:8888 -it crac1017/tensorflow:cpu /bin/bash 

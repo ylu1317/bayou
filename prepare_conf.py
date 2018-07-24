@@ -7,12 +7,13 @@ def get_package(fname):
     """
     get the package this java file is in
     """
-    lines = open(fname).read().split("\n");
-    for line in lines:
-        m = re.search('package\s+(.+?);', line);
-        if m is not None:
-            package = m.group(1);
-            return package;
+    with open(fname, "r", errors = "ignore") as infile:
+        lines = infile.readlines();
+        for line in lines:
+            m = re.search('package\s+(.+?);', line);
+            if m is not None:
+                package = m.group(1);
+                return package;
 
 def gen_conf(pkg_set):
     """
@@ -40,7 +41,7 @@ def main(args):
         """);
 
     dirname = args[1];
-    print "Generating config file for dir '%s'" % dirname;
+    print("Generating config file for dir '%s'" % dirname);
     all_pkg = set();
 
     for dirpath, dirnames, filenames in os.walk(dirname):
@@ -50,16 +51,15 @@ def main(args):
                 # print "package: '%s' from '%s'" %(pkg, fname);
                 all_pkg.add(pkg);
     
-    print "Preparing config file..";
+    print("Preparing config file..");
     conf_str = gen_conf(all_pkg);
-    print conf_str;
 
-    out_fname = dirname + ".conf";
-    print "Writing config into '%s'" % out_fname;
+    out_fname = dirname + "/" + dirname + ".conf";
+    print("Writing config into '%s'" % out_fname);
     with open(out_fname, "w") as outfile:
         outfile.write(conf_str);
 
-    print "Done.";
+    print("Done.");
     
 if __name__ == '__main__':
     main(sys.argv)
