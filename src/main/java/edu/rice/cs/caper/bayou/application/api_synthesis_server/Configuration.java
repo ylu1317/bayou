@@ -29,9 +29,9 @@ import java.util.Properties;
  */
 public class Configuration
 {
-    static final NatNum32 RequestListenPort;
+    public static final NatNum32 RequestListenPort;
 
-    static final NatNum32 HeartbeatListenPort;
+    public static final NatNum32 HeartbeatListenPort;
 
     public static final NatNum32 SynthesizeTimeoutMs;
 
