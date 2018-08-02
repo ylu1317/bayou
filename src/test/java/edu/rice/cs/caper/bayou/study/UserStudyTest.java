@@ -17,12 +17,19 @@ package edu.rice.cs.caper.bayou.study;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class UserStudyTest {
+
     @Test
     public void testReadLine() throws IOException {
         String filename = "bayou/src/test/resources/study/text.txt";
@@ -59,6 +66,22 @@ public class UserStudyTest {
             }
         }
         assertEquals(6, result);
+    }
+
+    @Test
+    public void testParsingXML() throws ParserConfigurationException, IOException, SAXException {
+        String filename = "bayou/src/test/resources/study/foo.xml";
+        String[] names = new String[6];
+
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+        Document doc = dBuilder.parse(filename);
+        doc.getDocumentElement().normalize();
+        NodeList list = doc.getElementsByTagName("name");
+        for(int i = 0; i < list.getLength(); ++i) {
+            names[i] = String.valueOf(list.item(i).getTextContent());
+        }
+        assertArrayEquals(new String[]{"a1", "ab1", "a2", "ac1", "hour", "a3"}, names);
     }
 
 }
