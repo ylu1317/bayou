@@ -55,7 +55,8 @@ class ApiSynthesisLocalClient
     {
         List<String> results;
         {
-            ApiSynthesisClient client = new ApiSynthesisClient("localhost", Configuration.RequestListenPort.AsInt);
+            // ApiSynthesisClient client = new ApiSynthesisClient("localhost", Configuration.RequestListenPort.AsInt);
+            ApiSynthesisClient client = new ApiSynthesisClient("ganymede.cs.rice.edu", Configuration.RequestListenPort.AsInt);
             results = client.synthesise(code, maxProgramCount);
         }
 
