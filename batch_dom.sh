@@ -6,17 +6,13 @@ if [ "$#" -lt 1 ]; then
 	exit 1
 fi 
 
-echo "Training..."
-python3 src/main/python/bayou/models/low_level_evidences/train.py --config train.conf --save "$1/model" "$1/$1.train" > "$1/train.out"
-exit 1
-
 if [ ! -d "$1" ]; then
 	echo "directory does not exist: $1"
 	exit 1
 fi 
 
 echo "Generating file list..."
-find $1 -type f -name "*.java" > "$1/$1.txt"
+# find $1 -type f -name "*.java" > "$1/$1.txt"
 if [ ! -f "$1/$1.txt" ]; then
 	echo "Failed to generate file list..."
 	exit 1
@@ -50,4 +46,8 @@ if [ ! -f "$1/$1.train" ]; then
 	echo "Failed to train."
 	exit 1
 fi 
+
+echo "Training..."
+python3 src/main/python/bayou/models/low_level_evidences/train.py --config train.conf --save "$1/model" "$1/$1.train" > "$1/train.out"
+exit 1
 

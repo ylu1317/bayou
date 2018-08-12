@@ -16,4 +16,4 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BAYOU_JAR="$(ls $SCRIPT_DIR/*.jar)"
-java -Dorg.apache.logging.log4j.simplelog.StatusLogger.level=OFF -DconfigurationFile=$SCRIPT_DIR/resources/conf/apiSynthesisServerConfig.properties -cp $BAYOU_JAR edu.rice.cs.caper.bayou.application.api_synthesis_server.ApiSynthesisLocalClient $1 $2 $3 $4 $5
+java -Dorg.apache.logging.log4j.simplelog.StatusLogger.level=OFF -DconfigurationFile=$SCRIPT_DIR/resources/conf/apiSynthesisServerConfig.properties -cp $BAYOU_JAR edu.rice.cs.caper.bayou.application.api_synthesis_server.ApiSynthesisLocalClient $1 $2 $3 $4 $5 $6

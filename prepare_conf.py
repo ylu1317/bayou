@@ -48,8 +48,9 @@ def main(args):
         for fname in filenames:
             if fname.endswith(".java"):
                 pkg = get_package(dirpath + "/" + fname);
+                if pkg is not None:
                 # print "package: '%s' from '%s'" %(pkg, fname);
-                all_pkg.add(pkg);
+                    all_pkg.add(pkg);
     
     print("Preparing config file..");
     conf_str = gen_conf(all_pkg);

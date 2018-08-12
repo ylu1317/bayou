@@ -51,7 +51,7 @@ class ApiSynthesisLocalClient
                 "    }   \n" +
                 "}";
 
-    private static void synthesise(String code, int maxProgramCount) throws IOException, SynthesisError
+    private static void synthesise(String code, int maxProgramCount, boolean console) throws IOException, SynthesisError
     {
         List<String> results;
         {
@@ -59,17 +59,18 @@ class ApiSynthesisLocalClient
             results = client.synthesise(code, maxProgramCount);
         }
 
-        /*
-        for(String result : results)
-        {
-	        System.out.println("\n---------- BEGIN PROGRAM  ----------");
-            System.out.print(result);
+        if(console) {
+            for(String result : results)
+            {
+                System.out.println("\n---------- BEGIN PROGRAM  ----------");
+                System.out.print(result);
+            }
+            System.out.print("\n"); // don't have next console prompt start on final line of code output.
+        } else {
+            Gson gson = new Gson();
+            String json_str = gson.toJson(results);
+            System.out.println(json_str);
         }
-        System.out.print("\n"); // don't have next console prompt start on final line of code output.
-        */
-        Gson gson = new Gson();
-        String json_str = gson.toJson(results);
-        System.out.println(json_str);
     }
 
     private static final String NUM_PROGRAMS = "num_programs";
@@ -83,6 +84,7 @@ class ApiSynthesisLocalClient
          */
         Options options = new Options();
         options.addOption("p", NUM_PROGRAMS, true, "the maximum number of programs to return");
+        options.addOption("console", false, "we want to output the results to the console");
         options.addOption(HELP, HELP, false, "print this message");
 
         CommandLine line = new DefaultParser().parse( options, args );
@@ -90,7 +92,7 @@ class ApiSynthesisLocalClient
         /*
          * If more arguments are given than possibly correct or the user asked for help, show help message and exit.
          */
-        if(args.length >= 6 || line.hasOption(HELP))
+        if(args.length >= 7 || line.hasOption(HELP))
         {
             HelpFormatter formatter = new HelpFormatter();
             formatter.printHelp( "synthesize.sh [OPTION]... [FILE]", options);
@@ -134,9 +136,14 @@ class ApiSynthesisLocalClient
             }
         }
 
+        boolean output_console = false;
+        if(line.hasOption("console")) {
+            output_console = true;
+        }
+
         try
         {
-            synthesise(code, maxProgramCount);
+            synthesise(code, maxProgramCount, output_console);
         }
         catch (ParseError e)
         {
